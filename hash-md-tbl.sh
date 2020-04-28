@@ -1,6 +1,6 @@
 #!/bin/bash
 # Benjamin Steenkamer, 2020.
-# Calculates the hash(es) of all the files in a folder and then generates a
+# Calculates the hashes of all the files in a folder and then generates a
 # Markdown-style table of the files and hashes. It generates CRC32 and SHA-256
 # hashes and outputs them into `output.md`.
 #
