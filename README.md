@@ -10,6 +10,8 @@ A collection of simple but useful Bash scripts so I don't have to remember the c
 * `djvu2pdf.sh`
     * Convert `.djvu` to `.pdf`.
     * Requires `ddjvu`.
+* `hash-md-tbl.sh`
+    * Calculates the hash(es) of all the files in a folder and generates a Markdown-style table of the files and hashes.
 * `pdf2png2pdf.sh`
     * Convert `.pdf` to `.png` and then back to `.pdf`.
     * Useful for deactivating links in the `.pdf`.
