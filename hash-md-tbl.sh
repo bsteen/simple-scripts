@@ -1,14 +1,12 @@
 #!/bin/bash
 # Benjamin Steenkamer, 2020.
 # Calculates the hash(es) of all the files in a folder and then generates a
-# Markdown-style table of the files and hashes. By default, it only generates
-# the SHA-256 hashes and outputs them into `output.md`.
-# Specify hashes to calculate: ./hash-tbl-md.sh -h hash1 hash2 ...
-# Available hashes/checksums: sha256
+# Markdown-style table of the files and hashes. It generates CRC32 and SHA-256
+# hashes and outputs them into `output.md`.
 #
 # TODO:
 # Specify the folder to hash
-# Add crc32 and file size (bytes)
+# Add CRC32 and file size (bytes)
 # Specify output file name: -o "file_name"
 # Specify file filter (only hash these files): -f "*.iso|*.bin"
 # Hash files in sub-folders
