@@ -5,10 +5,10 @@
 # the SHA-256 hashes and outputs them into `output.md`.
 # Specify hashes to calculate: ./hash-tbl-md.sh -h hash1 hash2 ...
 # Available hashes/checksums: sha256
+#
 # TODO:
 # Specify the folder to hash
-# Specify hashes to calculate: -h hash1 hash2 ...
-# Add hashes: md5, crc32, crc64, sha1, sha256, sha512
+# Add crc32 and file size (bytes)
 # Specify output file name: -o "file_name"
 # Specify file filter (only hash these files): -f "*.iso|*.bin"
 # Hash files in sub-folders
