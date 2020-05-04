@@ -1,5 +1,5 @@
 #!/bin/bash
-# Benjamin Steenkamer, 2020.
+# (C) 2020 Benjamin Steenkamer.
 # Calculates the checksum/hashes of all the files in a folder and then generates a
 # Markdown-style table of the results. The results are outputed into `output.md`.
 #

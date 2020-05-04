@@ -1,5 +1,5 @@
 #!/bin/bash
-# Benjamin Steenkamer, 2020.
+# (C) 2020 Benjamin Steenkamer.
 # Fetch and update packages; then remove old packages.
 sudo apt-get update
 sudo apt-get dist-upgrade

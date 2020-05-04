@@ -1,5 +1,5 @@
 #!/bin/bash
-# Benjamin Steenkamer, 2020.
+# (C) 2020 Benjamin Steenkamer.
 # Convert .djvu to .pdf
 input="$1"
 output="output.pdf"

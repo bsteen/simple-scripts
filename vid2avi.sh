@@ -1,5 +1,5 @@
 #!/bin/bash
-# Benjamin Steenkamer, 2020.
+# (C) 2020 Benjamin Steenkamer.
 # Convert a compatible video container file to .avi while trying to maintain good quality.
 # Codec info: https://trac.ffmpeg.org/wiki/Encode/H.264
 

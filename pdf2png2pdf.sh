@@ -1,5 +1,5 @@
 #!/bin/bash
-# Benjamin Steenkamer, 2020.
+# (C) 2020 Benjamin Steenkamer.
 # Convert .pdf to .png and then back to .pdf.
 # Try to  maintain good quaility in the process (increase density if bad).
 # Useful for deactivating links in the .pdf.
