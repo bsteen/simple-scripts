@@ -10,7 +10,7 @@ A collection of simple but useful Bash scripts so I don't have to remember the c
 * `djvu2pdf.sh`
     * Convert `.djvu` to `.pdf`.
     * Requires `ddjvu`.
-* `hash-md-tbl.sh`
+* `hashmd.sh`
     * Calculates the checksum/hashes of all the files in a folder and generates a Markdown-style table of the results.
     * Requires `libarchive-zip-perl`.
     * See an example of the tables generated [here](https://bsteen.github.io/hashes.html).
