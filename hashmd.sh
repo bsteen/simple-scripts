@@ -7,7 +7,6 @@
 # Specify the folder to hash
 # Specify output file name: -o "file_name"
 # Specify file filter (only hash these files): -f "*.iso|*.bin"
-# Hash files in sub-folders
 
 output_name="output.md"
 
