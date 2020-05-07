@@ -2,7 +2,11 @@
 # (C) 2020 Benjamin Steenkamer.
 # Calculates the checksum/hashes of all the files in a folder and then generates a
 # Markdown-style table of the results. The results are outputted into `output.md`.
-#
+# Usage:
+# Create table of files in current directory:
+#   ./hashmd.sh
+# Create table of files in current directory and all sub directories:
+#   ./hashmd.sh -r
 # TODO:
 # Specify the folder to hash
 # Specify output file name: -o "file_name"
@@ -31,7 +35,7 @@ printf "|---|---|---|---|\n" >> $output_name
 while read file; do
     # If it is actually a file (and not a directory), hash it
     if [[ -f $file ]]; then
-        printf "Hashing $file...\n"
+        printf "Processing $file...\n"
         size=$(du -b "$file" | awk '{print $1}')
         crc=$(crc32 "$file")
         sha=$(sha256sum "$file" | awk '{print $1}')
