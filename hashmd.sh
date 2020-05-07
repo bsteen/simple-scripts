@@ -35,6 +35,11 @@ printf "|---|---|---|---|\n" >> $output_name
 while read file; do
     # If it is actually a file (and not a directory), hash it
     if [[ -f $file ]]; then
+        # Don't hash this script file
+        if [ $file = "hashmd.sh" ]; then
+            continue
+        fi
+
         printf "Processing $file...\n"
         size=$(du -b "$file" | awk '{print $1}')
         crc=$(crc32 "$file")
