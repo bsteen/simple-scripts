@@ -1,7 +1,7 @@
 #!/bin/bash
 # (C) 2020 Benjamin Steenkamer.
 # Calculates the checksum/hashes of all the files in a folder and then
-# generates a # Markdown-style table of the results. The results are outputted
+# generates a Markdown-style table of the results. The results are outputted
 # into `output.md`.
 # Usage:
 # Create table from files in given directory (no directory means current one):
@@ -30,7 +30,7 @@ if [ $recur = true ]; then
     # Find all files and directories recursively, sort case-insensitive
     files=$(find "$dir" | sort -f)
 else
-    # List files and directories only in base directory, sort case-insensitive
+    # Find files and directories only in base directory, sort case-insensitive
     files=$(find "$dir" -maxdepth 1 | sort -f)
 fi
 
@@ -40,7 +40,7 @@ printf "|---|---|---|---|\n" >> $output_name
 
 while read file; do
     if [[ -f "$file" ]]; then         # If it is actually a file, hash it
-        if [ "$file" = "hashmd.sh" ]; then    # Don't hash this script file
+        if [ "$file" = "hashmd.sh" ]; then    # Don't hash this script file (TODO: use `basename "$0"`?)
             continue
         fi
 
