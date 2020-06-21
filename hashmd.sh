@@ -2,7 +2,7 @@
 # (C) 2020 Benjamin Steenkamer.
 # Calculates the checksum/hashes of all the files in a folder and then
 # generates a Markdown-style table of the results. The results are outputted
-# into `output.md`.
+# into `output.md` (not really a "simple" script any more...).
 # Usage:
 # Create table from files in given directory (no directory means current one):
 #   `./hashmd.sh path/to/dir` or `./hashmd.sh`
@@ -13,6 +13,7 @@
 # Specify file filter (only hash these files): -f "*.iso|*.bin"
 
 output_name="output.md"
+script_name="./$(basename $0)"
 dir="."
 recur=false
 
@@ -40,7 +41,7 @@ printf "|---|---|---|---|\n" >> $output_name
 
 while read file; do
     if [[ -f "$file" ]]; then         # If it is actually a file, hash it
-        if [ "$file" = "hashmd.sh" ]; then    # Don't hash this script file (TODO: use `basename "$0"`?)
+        if [ "$file" = "$script_name" ]; then    # Don't hash this script file
             continue
         fi
 
