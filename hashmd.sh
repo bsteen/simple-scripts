@@ -54,7 +54,7 @@ while read file; do
             file=$(echo "$file" | cut -c 3-)    # Cut off the leading "./"
         fi
 
-        printf "| $file | \`$size`\ | \`$crc\`  | \`$sha\` |\n" >> $output_name
+        printf "| $file | \`$size\` | \`$crc\`  | \`$sha\` |\n" >> $output_name
     fi
 done <<< $files
 printf "Done.\n"
