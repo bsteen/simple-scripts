@@ -10,7 +10,6 @@
 #   `./hashmd.sh -r path/to/dir` or `./hashmd.sh -r`
 # TODO:
 # Sort by natural order (1 comes before 2)
-# Center align file size column
 # Handle case where directory doesn't exist
 # Specify output file name: -o "file_name"
 # Specify file filter (only hash these files): -f "*.iso|*.bin"
@@ -40,7 +39,7 @@ fi
 
 > $output_name      # Create or truncate output file
 printf "| File| Size (B) | CRC-32 | SHA-256 |\n" >> $output_name
-printf "|---|---|---|---|\n" >> $output_name
+printf "|---|:---:|---|---|\n" >> $output_name
 
 while read file; do
     if [[ -f "$file" ]]; then         # If it is actually a file, hash it
