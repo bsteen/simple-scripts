@@ -9,7 +9,6 @@
 # Create table of files in given directory and all sub directories:
 #   `./hashmd.sh -r path/to/dir` or `./hashmd.sh -r`
 # TODO:
-# Sort by natural order (1 comes before 2)
 # Handle case where directory doesn't exist
 # Specify output file name: -o "file_name"
 # Specify file filter (only hash these files): -f "*.iso|*.bin"
