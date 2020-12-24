@@ -21,6 +21,9 @@ A collection of simple but useful Bash scripts so I don't have to remember the c
 * `pdfcombine.sh`
     * Combine multiple `.pdf` files into a single `.pdf`.
     * Requires `pdftk`.
+* `to-webm.sh`
+    * Converts a video container file (e.g. .mp4) to .webm format.
+    * Requires `ffmpeg`.
 * `upgrade.sh`
     * Fetch and update packages; then remove old packages.
     * Uses `apt-get` package manager.
