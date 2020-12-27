@@ -19,8 +19,8 @@ else
 fi
 
 # Two-pass, constant quality method (recommended)
-ffmpeg -i $1 -c:v libvpx-vp9 -b:v 0 -crf $crf -pass 1 -an -f null /dev/null && \
-ffmpeg -i $1 -c:v libvpx-vp9 -b:v 0 -crf $crf -pass 2 -c:a libopus output.webm
+ffmpeg -i "$1" -c:v libvpx-vp9 -b:v 0 -crf $crf -pass 1 -an -f null /dev/null && \
+ffmpeg -i "$1" -c:v libvpx-vp9 -b:v 0 -crf $crf -pass 2 -c:a libopus output.webm
 
 # Simple-pass, constant quality method (faster, less efficient compression)
-# ffmpeg -i $1 -c:v libvpx-vp9 -crf $crf -b:v 0 -c:a libopus output.webm
+# ffmpeg -i "$1" -c:v libvpx-vp9 -crf $crf -b:v 0 -c:a libopus output.webm
