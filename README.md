@@ -6,10 +6,10 @@ A collection of simple but useful Bash scripts so I don't have to remember the c
 # List of Scripts
 * `avcomb.sh`
     * Combine the audio stream of video 1 with the video stream of video 2.
-    * Requires `ffmpeg`.
+    * Requires [`ffmpeg`](https://linux.die.net/man/1/ffmpeg).
 * `djvu2pdf.sh`
     * Convert `.djvu` to `.pdf`.
-    * Requires `ddjvu`.
+    * Requires [`ddjvu`](https://linux.die.net/man/1/ddjvu).
 * `hashmd.sh`
     * Calculates the checksum/hashes of all the files in a folder and generates a Markdown-style table of the results.
     * Requires `libarchive-zip-perl`.
@@ -17,18 +17,20 @@ A collection of simple but useful Bash scripts so I don't have to remember the c
 * `pdf2png2pdf.sh`
     * Convert `.pdf` to `.png` and then back to `.pdf`.
     * Useful for deactivating links in the `.pdf`.
-    * Requires `convert` from `imagemagick`.
+    * Requires [`convert`](https://linux.die.net/man/1/convert) from [`imagemagick`](https://linux.die.net/man/1/imagemagick).
 * `pdfcombine.sh`
     * Combine multiple `.pdf` files into a single `.pdf`.
-    * Requires `pdftk`.
+    * Requires [`pdftk`](https://linux.die.net/man/1/pdftk).
 * `shredu.sh`
-    * Overwrites the specified file(s) with 3 passes of random data, a final 4th pass of all zeros, and then removes the file(s).  Output is set to verbose to show all steps.
+    * Overwrites the specified file(s) with 3 passes of random data, a final 4th pass of all zeros, and then removes the file(s).
+    * Output is set to verbose to show all steps.
+    * Used the [`shred`](https://linux.die.net/man/1/shred) command
 * `to-webm.sh`
     * Converts a video container file (e.g. .mp4) to .webm format.
-    * Requires `ffmpeg`.
+    * Requires [`ffmpeg`](https://linux.die.net/man/1/ffmpeg).
 * `upgrade.sh`
     * Fetch and update packages; then remove old packages.
     * Uses `apt-get` package manager.
 * `vid2avi.sh`
     * Convert a compatible video container file to `.avi` while trying to maintain good quality.
-    * Requires `ffmpeg`.
+    * Requires [`ffmpeg`](https://linux.die.net/man/1/ffmpeg).
