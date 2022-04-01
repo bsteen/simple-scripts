@@ -22,7 +22,7 @@ A collection of simple but useful Bash scripts so I don't have to remember the c
     * Combine multiple `.pdf` files into a single `.pdf`.
     * Requires [`pdftk`](https://linux.die.net/man/1/pdftk).
 * `shredu.sh`
-    * Overwrites the specified file(s) with 3 passes of random data, a final 4th pass of all zeros, and then removes the file(s).
+    * Overwrites the specified file(s) with 2 passes of random data, a final pass of all zeros, and then removes the file(s).
     * Output is set to verbose to show all steps.
     * Used the [`shred`](https://linux.die.net/man/1/shred) command
 * `to-webm.sh`
