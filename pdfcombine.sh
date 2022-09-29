@@ -5,4 +5,4 @@
 # Remove spaces from the input file names before combining.
 # TODO: Get files names with spaces to work.
 
-pdftk $* cat output output.pdf verbose
+pdftk "$@" cat output output.pdf verbose    # "$@" expands to separate words: "$1" "$2" ...
