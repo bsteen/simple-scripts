@@ -1,5 +1,5 @@
 #!/bin/bash
-# (C) 2020 Benjamin Steenkamer.
+# (C) 2022 Benjamin Steenkamer.
 # Combine multiple .pdf files into a single .pdf.
 # Usage: ./pdfcombine.sh input1.pdf input2.pdf...
 
