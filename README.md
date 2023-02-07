@@ -25,7 +25,7 @@ A collection of simple but useful Bash scripts so I don't have to remember the c
     * Check if the calculated SHA256 sum of file equals the provided SHA256 sum string.
     * This saves you the time of making a formatted file with the sum and filename.
 * `shredu.sh`
-    * Overwrites the specified file(s) with 2 passes of random data, a final pass of all zeros, and then removes the file(s).
+    * Overwrites the specified file(s) with random data, then with all zeros, and then removes the file(s).
     * Output is set to verbose to show all steps.
     * Used the [`shred`](https://linux.die.net/man/1/shred) command
 * `to-webm.sh`
