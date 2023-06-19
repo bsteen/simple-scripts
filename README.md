@@ -1,6 +1,8 @@
 # simple-scripts
 A collection of simple but useful Bash scripts so I don't have to remember the commands. Most scripts deal with `.pdf` or video file manipulation/conversion. Some scripts have become less "simple" over time as I add more functionality, but my goal is to make the code easy to understand over making it compact or efficient.
 
+Copyright (C) 2020 - 2023 Benjamin Steenkamer. See `LICENSE` for details.
+
 # List of Scripts
 * `avcomb.sh`
     * Combine the audio stream of video 1 with the video stream of video 2
