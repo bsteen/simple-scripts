@@ -22,9 +22,10 @@ A collection of simple but useful Bash scripts so I don't have to remember the c
 * `rand-str.sh`
    * Gets 128 btyes of random data from `/dev/urandom` and returns visible ASCII characters only
    * Passing `-a` makes only letters (upper and lower) be retuned.
-* `sha256_verify.sh`
+* `sha256-verify.sh`
     * Check if the calculated SHA256 sum of file equals the provided SHA256 sum string
     * This saves you the time of making a formatted file with the sum and filename
+    * Usage: `./sha256-verify.sh <file> <SHA-256-str>`
 * `shredu.sh`
     * Overwrites the specified file(s) with random data, then with all zeros, and then removes the file(s)
     * **Has option to recursively shred all files in directory: `-r`**
