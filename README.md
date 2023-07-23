@@ -26,8 +26,8 @@ Copyright (C) 2020 - 2023 Benjamin Steenkamer. See `LICENSE` for details.
    * Passing `-a` makes only letters (upper and lower) be retuned.
 * `sha256-check.sh`
     * `--check` if the calculated SHA256 sum of file equals the provided SHA256 sum string
-    * This saves you the time of making a formatted file with the sum and filename
-    * Usage: `./sha256-verify.sh <file> <SHA-256-str>`
+    * Saves you from making a formatted file with the sum and filename then running `sha256sum --check ...`
+    * Usage: `./sha256-check.sh <file> <SHA-256-str>`
 * `shredu.sh`
     * Overwrites the specified file(s) with random data, then with all zeros, and then removes the file(s)
     * **Has option to recursively shred all files in directory: `-r`**
