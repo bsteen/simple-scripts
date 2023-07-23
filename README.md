@@ -24,8 +24,8 @@ Copyright (C) 2020 - 2023 Benjamin Steenkamer. See `LICENSE` for details.
 * `rand-str.sh`
    * Gets 128 btyes of random data from `/dev/urandom` and returns visible ASCII characters only
    * Passing `-a` makes only letters (upper and lower) be retuned.
-* `sha256-verify.sh`
-    * Check if the calculated SHA256 sum of file equals the provided SHA256 sum string
+* `sha256-check.sh`
+    * `--check` if the calculated SHA256 sum of file equals the provided SHA256 sum string
     * This saves you the time of making a formatted file with the sum and filename
     * Usage: `./sha256-verify.sh <file> <SHA-256-str>`
 * `shredu.sh`
