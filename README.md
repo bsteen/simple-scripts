@@ -17,7 +17,7 @@ See `LICENSE` for details.
 * `pdf2png2pdf.sh`
     * Convert `.pdf` to `.png` and then back to `.pdf`
     * Useful for deactivating links in the `.pdf`
-    * Requires [`convert`](https://linux.die.net/man/1/convert) from [`imagemagick`](https://linux.die.net/man/1/imagemagick)
+    * Requires [`imagemagick`](https://linux.die.net/man/1/imagemagick)
 * `pdfcombine.sh`
     * Combine multiple `.pdf` files into a single `.pdf`
     * Requires [`pdftk`](https://linux.die.net/man/1/pdftk)
