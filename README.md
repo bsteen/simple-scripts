@@ -4,6 +4,9 @@ A collection of simple but useful Bash scripts so I don't have to remember the c
 See `LICENSE` for details.
 
 # List of Scripts
+* `2iso.sh`
+   * Converts a single file or folder into a `.iso` file
+   * Requires `mkisofs`
 * `avcomb.sh`
     * Combine the audio stream of video 1 with the video stream of video 2
     * Requires [`ffmpeg`](https://linux.die.net/man/1/ffmpeg)
