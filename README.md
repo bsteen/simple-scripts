@@ -1,5 +1,5 @@
 # simple-scripts
-A collection of simple but useful Bash scripts so I don't have to remember the commands. Most scripts deal with `.pdf` or video file manipulation/conversion. Some scripts have become less "simple" over time as I add more functionality, but my goal is to make the code easy to understand over making it compact or efficient. 
+A collection of simple but useful Bash scripts so I don't have to remember the commands. Most scripts deal with `.pdf` or video file manipulation/conversion. Some scripts have become less "simple" over time as I add more functionality, but my goal is to make the code easy to understand over making it compact or efficient.
 
 See `LICENSE` for details.
 
@@ -21,7 +21,7 @@ See `LICENSE` for details.
     * Convert `.pdf` to a set of `.png`s
 * `pdf2png2pdf.sh`
     * Convert `.pdf` to `.png` and then back to `.pdf`
-    * Useful for deactivating links in the `.pdf`
+    * Useful for stripping hyperlinks and searchable text in PDFs
     * Requires [`imagemagick`](https://linux.die.net/man/1/imagemagick)
 * `pdfcombine.sh`
     * Combine multiple `.pdf` files into a single `.pdf`
