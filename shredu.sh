@@ -52,7 +52,9 @@ if $recurse; then
             fi
         done
 
-        # TODO:  Remove folder(s) after all files have been wiped; ask user or another flag?
+        # TODO: --preserve-tree
+        # When -r is passed, keep folders but delete files
+        # Otherwise rename folder, then delete; should be the default -r action
         # FIXME: If shred fails on file, don't want to to use regular rm on folder; should warn user
         # if [ -d "$cmd_arg" ]; then
         #     echo "rm -r$force $cmd_arg"
