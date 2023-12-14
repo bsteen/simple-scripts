@@ -13,5 +13,5 @@ convert -density 300 "$1" p2p2p-temp/page.png
 echo "Converting PNGs to PDF..."
 # Get PNG names by numeric order
 convert $(ls -1 p2p2p-temp/*.png | sort -V) "${1%.pdf}-converted.pdf"
-rm -rf p2p2p-temp
+rm -r p2p2p-temp
 echo "Done"
