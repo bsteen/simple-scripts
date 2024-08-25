@@ -3,8 +3,7 @@ A collection of simple but useful Bash scripts so I don't have to remember the c
 
 See `LICENSE` for details.
 
-# List of Scripts
-## PDF
+# PDF Scripts
 * `djvu2pdf.sh`
     * Convert `.djvu` to `.pdf`
     * Requires [`ddjvu`](https://linux.die.net/man/1/ddjvu)
@@ -17,7 +16,7 @@ See `LICENSE` for details.
 * `pdfcombine.sh`
     * Combine multiple `.pdf` files into a single `.pdf`
     * Requires [`pdftk`](https://linux.die.net/man/1/pdftk)
-## Video
+# Video Scripts
 * `avcomb.sh`
     * Combine the audio stream of video 1 with the video stream of video 2
     * Requires [`ffmpeg`](https://linux.die.net/man/1/ffmpeg)
@@ -27,7 +26,7 @@ See `LICENSE` for details.
 * `vid2avi.sh`
     * Convert a compatible video container file to `.avi` while trying to maintain good quality
     * Requires [`ffmpeg`](https://linux.die.net/man/1/ffmpeg)
- ## Other
+# Other Scripts
 * `2iso.sh`
    * Converts a single file or folder into a `.iso` file
    * Requires `mkisofs`
@@ -49,4 +48,3 @@ See `LICENSE` for details.
 * `upgrade.sh`
     * Fetch and update packages; then remove old packages
     * Uses `apt-get` package manager
-
