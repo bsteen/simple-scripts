@@ -28,7 +28,7 @@ See `LICENSE` for details.
     * Requires [`pdftk`](https://linux.die.net/man/1/pdftk)
 * `randstr.sh`
    * Gets 128 btyes of random data from `/dev/urandom` and returns visible ASCII characters only
-   * Passing `-a` makes only alpha-numeric characters be retuned
+   * Passing `-a` makes only alpha-numeric characters be returned
 * `sha256-check.sh`
     * `--check` if the calculated SHA256 sum of file equals the provided SHA256 sum string
     * Saves you from making a formatted file with the sum and filename then running `sha256sum --check ...`
