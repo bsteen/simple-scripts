@@ -1,4 +1,5 @@
 #!/bin/bash
+# (C) 2024 Benjamin Steenkamer
 # Prints basic details of Debian distro:
 # Debian major.minor, codename, and architecture
 # Kernel version and release date
