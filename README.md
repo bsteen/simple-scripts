@@ -35,8 +35,9 @@ See [`LICENSE`](LICENSE) for details.
     * Requires `libarchive-zip-perl`
     * See an example of the tables generated [here](https://bsteen.github.io/hashes.html)
 * `randstr.sh`
-   * Gets 128 btyes of random data from `/dev/urandom` and returns visible ASCII characters only
-   * Passing `-a` makes only alpha-numeric characters be returned
+    * Get 128 bytes of random data from `/dev/urandom` and print visible ASCII characters only
+    * Passing `-a` makes only alpha-numeric characters print
+    * Passing `-A` makes only alpha-numeric characters print, excluding O0lI
 * `sha256-check.sh`
     * `--check` if the calculated SHA256 sum of file equals the provided SHA256 sum string
     * Saves you from making a formatted file with the sum and filename then running `sha256sum --check ...`
