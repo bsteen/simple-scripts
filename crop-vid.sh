@@ -12,7 +12,6 @@ fi
 base="${1%.*}"
 ext="${1##*.}"
 output="${base}_cropped.${ext}"
-echo $output
 
 # Crop video
-# ffmpeg -i "$1" -ss "$2" -to "$3" -c copy "$output"
+ffmpeg -i "$1" -ss "$2" -to "$3" -c copy "$output"
