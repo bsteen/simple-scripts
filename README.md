@@ -20,6 +20,9 @@ See [`LICENSE`](LICENSE) for details.
 * `avcomb.sh`
     * Combine the audio stream of video 1 with the video stream of video 2
     * Requires [`ffmpeg`](https://linux.die.net/man/1/ffmpeg)
+* `crop-vid.sh`
+	* Crop a video with a given start and end time
+	* Requires [`ffmpeg`](https://linux.die.net/man/1/ffmpeg)
 * `to-webm.sh`
     * Converts a video container file (e.g. .mp4) to .webm format
     * Requires [`ffmpeg`](https://linux.die.net/man/1/ffmpeg)
