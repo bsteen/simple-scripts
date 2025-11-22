@@ -7,6 +7,9 @@ See [`LICENSE`](LICENSE) for details.
 * `djvu2pdf.sh`
     * Convert `.djvu` to `.pdf`
     * Requires [`ddjvu`](https://linux.die.net/man/1/ddjvu)
+* `ocr.sh`
+    * Preform optical character recognition (OCR) on an input image or PDF, output text to the console
+    * Requires [`tesseract-ocr`](https://tesseract-ocr.github.io/)
 * `pdf2png.sh`
     * Convert `.pdf` to a set of `.png`s
 * `pdf2png2pdf.sh`
