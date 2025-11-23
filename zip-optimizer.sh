@@ -38,7 +38,7 @@ while IFS= read -r zip_file; do
 
     file_basename=$(basename "$zip_file")
     new_zip_file="$TEMP_DIR/$file_basename"
-    7z a -tzip -mx=9 -mmt "$new_zip_file" "$TEMP_DIR/*" > /dev/null
+    7z a -tzip -mx=9 -mmt=on "$new_zip_file" "$TEMP_DIR/*" > /dev/null  # Create a ZIP archive, using max compression level and multithreading
     new_size_bytes=$(stat -c %s "$new_zip_file")
 
     if [ "$new_size_bytes" -lt "$old_size_bytes" ]; then
