@@ -4,8 +4,12 @@
 # Replace the original ZIP archive if space is saved
 # Prints the space saved per file and the total space saved at the end
 # Usage: ./zip-optimizer <directory>
+if [ -z "$1" ]; then
+    echo "Usage: $0 <directory>"
+    exit 1
+fi
 
-TARGET_DIR=$(realpath "${1:-.}")   # Get the absolute path of given dir or current dir if none was given
+TARGET_DIR=$(realpath "$1")   # Get the absolute path of given dir
 if [ ! -d "$TARGET_DIR" ]; then
   echo "Directory not found: $TARGET_DIR"
   exit 1
