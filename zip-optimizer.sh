@@ -33,6 +33,7 @@ TEMP_DIR=$(mktemp -d)
 count=1
 total_saved_bytes=0
 # TODO make the syntax of this loop better
+# FIXME ctrl-c not handled properly when in loop
 while IFS= read -r zip_file; do
     printf "%0${FILE_COUNT_WIDTH}d/${FILE_COUNT} Processing ${zip_file}\n" "$count"
 
