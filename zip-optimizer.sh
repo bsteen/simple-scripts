@@ -24,7 +24,8 @@ if [ -z "$ZIP_FILES" ]; then
 fi
 
 FILE_COUNT=$(echo "$ZIP_FILES" | wc -l)
-FILE_COUNT_WIDTH=${#FILE_COUNT} # Get the number of digits in the file count
+FILE_COUNT_WIDTH=${#FILE_COUNT}               # Get the number of digits in the file count
+INDENT_WIDTH=$(( FILE_COUNT_WIDTH * 2 + 1 ))  # Length of two numbers + backslash
 echo "Optimizing $FILE_COUNT ZIP archives in $TARGET_DIR"
 
 TEMP_DIR=$(mktemp -d)
@@ -46,7 +47,7 @@ while IFS= read -r zip_file; do
     if [ "$new_size_bytes" -lt "$old_size_bytes" ]; then
         bytes_saved=$(( old_size_bytes - new_size_bytes ))
         human_saved=$(numfmt --to=iec-i --suffix=B --format='%.1f' $bytes_saved)
-        echo -e "\tSaved ${human_saved} (${bytes_saved})"
+        printf "%${INDENT_WIDTH}s Saved ${human_saved} (${bytes_saved})\n"
         mv -f "$new_zip_file" "$zip_file"
         total_saved_bytes=$(( total_saved_bytes + bytes_saved ))
     fi
