@@ -44,7 +44,7 @@ while IFS= read -r zip_file; do
     if [ "$new_size_bytes" -lt "$old_size_bytes" ]; then
         bytes_saved=$(( old_size_bytes - new_size_bytes ))
         human_saved=$(numfmt --to=iec-i --suffix=B --format='%.1f' $bytes_saved)
-        echo "  Saved ${human_saved} (${bytes_saved})"
+        echo -e "\tSaved ${human_saved} (${bytes_saved})"
         mv -f "$new_zip_file" "$zip_file"
         total_saved_bytes=$(( total_saved_bytes + bytes_saved ))
     fi
