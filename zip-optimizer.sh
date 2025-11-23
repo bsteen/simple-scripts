@@ -5,7 +5,7 @@
 # Prints the space saved per file and the total space saved at the end
 # Usage: ./zip-optimizer <directory>
 
-TARGET_DIR=$(realpath "${1:-.}")   # Get the absolute path of given directory or current dir if none was given
+TARGET_DIR=$(realpath "${1:-.}")   # Get the absolute path of given dir or current dir if none was given
 if [ ! -d "$TARGET_DIR" ]; then
   echo "Directory not found: $TARGET_DIR"
   exit 1
