@@ -23,9 +23,7 @@ FILE_COUNT=$(echo "$ZIP_FILES" | wc -l)
 FILE_COUNT_WIDTH=${#FILE_COUNT} # Get the number of digits in the file count
 echo "Optimizing $FILE_COUNT ZIP archives in $TARGET_DIR"
 
-TEMP_DIR="/tmp/zip-optimizer"
-rm -rf "$TEMP_DIR"    # Delete previous run if it failed
-mkdir -p "$TEMP_DIR"
+TEMP_DIR=$(mktemp -d)
 
 count=1
 total_saved_bytes=0
