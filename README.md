@@ -56,12 +56,12 @@ See [`LICENSE`](LICENSE) for details.
     * Fetch and update packages; then remove old packages
     * Uses `apt-get` package manager
 * `zip-all.sh`
-    * Zip uncompressed files in a directory into their own ZIPs
+    * Zip uncompressed files in a directory (depth=1) into their own ZIPs
     * Each file will be deleted after being successfully zipped
     * Usage: `./zip-all.sh <directory>`
     * Requires [`7zip`](https://linux.die.net/man/1/7z)
 * `zip-optimizer.sh`
-    * Recompress all the ZIP archives in a directory using the highest compression level
+    * Recompress all the ZIP archives in a directory (recursively) using the highest compression level
     * Replace the original ZIP archive if space is saved
     * Prints the space saved per file and the total space saved at the end
     * Usage: `./zip-optimizer.sh <directory>`
