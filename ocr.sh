@@ -3,4 +3,4 @@
 # Perform optical character recognition (OCR) on an input image or PDF
 # Outputs text to console
 DPI=300
-tesseract --dpi=$DPI "$1" stdout
+tesseract "$1" stdout --dpi $DPI
